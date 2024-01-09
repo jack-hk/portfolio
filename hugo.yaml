@@ -1,5 +1,5 @@
-baseURL: "https://examplesite.com/"
-title: ExampleSite
+baseURL: "https://jackhk.com/"
+title: Jack Hughes-King
 paginate: 5
 theme: PaperMod
 
@@ -16,11 +16,10 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: Jack Hughes-King
+  description: "Jack Hughes-King"
   keywords: [Blog, Portfolio, PaperMod]
-  author: Me
-  # author: ["Me", "You"] # multiple authors
+  author: Jack Hughes-King # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
@@ -52,7 +51,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "Jack Hughes-King"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -73,7 +72,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
+    Title: "Projects"
     Content: Welcome to my blog
 
   socialIcons:
