@@ -55,7 +55,7 @@ params:
 
   # hideFooter: # To Hide Footer Text om the end of page
   # CanonicalLinkText: # To show text before canonical URL's hostname
-  # displayFullLangName: # To show languageName under a language in Language switch header
+  displayFullLangName: true # To show languageName under a language in Language switch header
 
   assets:
     # disableHLJS: true # to disable highlight.js
@@ -88,7 +88,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Projects 🧬"
+    Title: "Projects"
     Content: Welcome to my blog
 
   socialIcons:
@@ -182,7 +182,7 @@ languages:
   en:
     contentDir: content/en
     disabled: false
-    languageCode: en-us
+    languageCode: en
     languageDirection: ltr
     languageName: ":gb:"
     params:

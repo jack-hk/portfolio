@@ -77,27 +77,9 @@ body:not(.dark) #sun {
     flex-wrap: inherit;
 }
 
-.lang-switch a {
-    margin: auto 3px;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.logo a {
-    font-size: 36px;
-    font-weight: 700;
-    margin: auto;
-}
-
-.logo-switches {
-    flex-wrap: inherit;
-    position: absolute;
-    right: 50px;
-}
-
 @media screen and (min-width: 600px) {
     .logo a {
-        font-size: 36px;
+        font-size: 38px;
         font-weight: 700;
         margin: auto;
     }
@@ -117,3 +99,12 @@ body:not(.dark) #sun {
         position: relative;
     }
 }
+
+
+.lang-switch a {
+    margin: auto 3px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
