@@ -7,39 +7,55 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
+enableEmoji: true
+copyright: "[example.site](https://example.site)"
 googleAnalytics: UA-123-45
+
+security:
+  enableInlineShortcodes: true
 
 minify:
   disableXML: true
   minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Jack Hughes-King
-  description: "Jack Hughes-King"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: Jack Hughes-King # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
+  env: production # To set env to production. To enable google analytics, opengraph, twitter-cards and schema.
+  title: Jack Hughes-King # To set title
+  description: "Jack Hughes-King" # To set site description
+  # author: # To show multiple Authors. author: ["Me", "You"] multiple authors. 
+  images: ["<link or path of image for opengraph, twitter-cards>"] # Link or path of image for opengraph, twitter-cards
+  keywords: [Blog, Portfolio, PaperMod] # Add keywords for Home page
+  DateFormat: "January 2, 2006" # The format of date strings in the website. Details
+  # languageAltTitle: "English" # Alternate title in Multilingual Mode
+
+  ShowReadingTime: true # To show read time in post meta
+  ShowShareButtons: true # To show/hide share buttons under post
+  ShowCodeCopyButtons: false # To show/hide Code Copy button
+  # ShowFullTextinRSS: # To show Content in RSS feed
+  
+    # THEME
   defaultTheme: auto # dark, light
   disableThemeToggle: false
-
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
+ 
+  disableSpecial1stPost: false # To disable no-card special appearance of 1st post
+  disableScrollToTop: false # To disable ScrollToTop button
+  # disableAnchoredHeadings: # To disable Anchored Headings
+  hidemeta: false # To Hide meta elements : date, read-time, author and available-translations for page
+  hideSummary: false # To Hide summary being shown in list pages
+  showtoc: false # To show/hide Table of Contents
+  tocopen: false # To keep open ToC by default on page load
+  ShowPostNavLinks: true # Show Previous and Next Posts below a Post
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
+  
+  # ShareButtons: # To customize which share buttons to be enabled on page
+  ShowWordCount: true # To word count to metadata
+  ShowRssButtonInSectionTermList: true # To show RSS icon in Section, Term and List pages
+  UseHugoToc: true # To use Hugo's default Toc instead of custom
+  comments: false # To show/hide comments
+
+  # hideFooter: # To Hide Footer Text om the end of page
+  # CanonicalLinkText: # To show text before canonical URL's hostname
+  # displayFullLangName: # To show languageName under a language in Language switch header
 
   assets:
     # disableHLJS: true # to disable highlight.js
@@ -72,7 +88,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Projects"
+    Title: "Projects 🧬"
     Content: Welcome to my blog
 
   socialIcons:
@@ -92,13 +108,15 @@ params:
       SiteVerificationTag: "XYZabc"
 
   cover:
+    cover.linkFullImages: false # To open full size cover images on click on cover
+    responsiveImages: false # To enable/disable generation of responsive cover images
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
+    URL: "https://github.com/jack-hk"
+    Text: "See project here!" # edit text
     appendFilePath: true # to append file path to Edit link
 
   # for search
@@ -111,6 +129,7 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
+
 menu:
   main:
     - identifier: categories
@@ -125,6 +144,19 @@ menu:
       name: example.org
       url: https://example.org
       weight: 30
+    - identifier: categories2
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags2
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: example2
+      name: example.org
+      url: https://example.org
+      weight: 30
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
@@ -135,3 +167,35 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+    page:
+        - HTML
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+languages:
+  en:
+    contentDir: content/en
+    disabled: false
+    languageCode: en-us
+    languageDirection: ltr
+    languageName: ":gb:"
+    params:
+      subtitle: Reference, Tutorials, and Explanations
+    title: Project Documentation
+    weight: 1
+  es:
+    contentDir: content/es
+    disabled: false
+    languageCode: es
+    languageDirection: ltr
+    languageName: ":es:"
+    params:
+      subtitle: Sitio web de ejemplo
+    title: Documentación del proyecto
+    weight: 2
