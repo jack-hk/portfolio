@@ -1,6 +1,6 @@
 baseURL: "https://jackhk.com/"
 title: Jack Hughes-King
-paginate: 5
+paginate: 100
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -8,7 +8,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
-summaryLength: 1002
+summaryLength: 70
 copyright: "[example.site](https://example.site)"
 
 googleAnalytics: UA-123-45
