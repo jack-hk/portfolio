@@ -8,7 +8,9 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
+summaryLength: 1002
 copyright: "[example.site](https://example.site)"
+
 googleAnalytics: UA-123-45
 
 security:
@@ -28,10 +30,10 @@ params:
   DateFormat: "January 2, 2006" # The format of date strings in the website. Details
   # languageAltTitle: "English" # Alternate title in Multilingual Mode
 
-  ShowReadingTime: true # To show read time in post meta
+  ShowReadingTime: false # To show read time in post meta
   ShowShareButtons: true # To show/hide share buttons under post
   ShowCodeCopyButtons: false # To show/hide Code Copy button
-  # ShowFullTextinRSS: # To show Content in RSS feed
+  ShowFullTextinRSS: true # To show Content in RSS feed
   
     # THEME
   defaultTheme: auto # dark, light
@@ -48,7 +50,7 @@ params:
   ShowBreadCrumbs: true
   
   # ShareButtons: # To customize which share buttons to be enabled on page
-  ShowWordCount: true # To word count to metadata
+  ShowWordCount: false # To word count to metadata
   ShowRssButtonInSectionTermList: true # To show RSS icon in Section, Term and List pages
   UseHugoToc: true # To use Hugo's default Toc instead of custom
   comments: false # To show/hide comments
