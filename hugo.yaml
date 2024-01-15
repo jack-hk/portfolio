@@ -111,7 +111,7 @@ params:
 
   cover:
     cover.linkFullImages: false # To open full size cover images on click on cover
-    responsiveImages: true # To enable/disable generation of responsive cover images
+    responsiveImages: false # To enable/disable generation of responsive cover images
     hidden: false # hide everywhere but not in structured data
     hiddenInList: false # hide on list pages and home
     hiddenInSingle: false # hide on single page
