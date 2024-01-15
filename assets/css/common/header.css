@@ -1,5 +1,8 @@
 .header {
     padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fafaf8;
+    border-bottom: 1px solid #eee;
 }
 
 .nav {
