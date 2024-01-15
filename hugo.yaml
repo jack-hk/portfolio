@@ -44,8 +44,8 @@ params:
   # disableAnchoredHeadings: # To disable Anchored Headings
   hidemeta: false # To Hide meta elements : date, read-time, author and available-translations for page
   hideSummary: false # To Hide summary being shown in list pages
-  showtoc: false # To show/hide Table of Contents
-  tocopen: false # To keep open ToC by default on page load
+  showtoc: true # To show/hide Table of Contents
+  tocopen: true # To keep open ToC by default on page load
   ShowPostNavLinks: true # Show Previous and Next Posts below a Post
   ShowBreadCrumbs: true
   
@@ -55,7 +55,7 @@ params:
   UseHugoToc: true # To use Hugo's default Toc instead of custom
   comments: false # To show/hide comments
 
-  # hideFooter: # To Hide Footer Text om the end of page
+  hideFooter: true # To Hide Footer Text om the end of page
   # CanonicalLinkText: # To show text before canonical URL's hostname
   displayFullLangName: true # To show languageName under a language in Language switch header
 
@@ -111,10 +111,10 @@ params:
 
   cover:
     cover.linkFullImages: false # To open full size cover images on click on cover
-    responsiveImages: false # To enable/disable generation of responsive cover images
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    responsiveImages: true # To enable/disable generation of responsive cover images
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
 
   editPost:
     URL: "https://github.com/jack-hk"

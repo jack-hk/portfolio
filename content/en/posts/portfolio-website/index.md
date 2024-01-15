@@ -3,8 +3,18 @@ title: "Portfolio Website"
 date: 2022-11-20T09:03:20-08:00
 draft: false
 searchHidden: false
+# description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+# tags: ["markdown", "css", "html", "themes"]
+# categories: ["themes", "syntax"]
+# series: ["Themes Guide"]
+# aliases: ["migrate-from-jekyl"]
+cover:
+  image: placeholder.jpg # can also paste direct link from external site
+  # caption: "Generated using [OG Image Playground by Vercel](placeholder.jpg)" 
+  relative: false # To use relative path for cover image, used in hugo Page-bundles
+ShowToc: true
+TocOpen: true
 ---
-What is Lorem Ipsum?
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 Why do we use it?
@@ -19,3 +29,5 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 Where can I get some?
 
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+
+![Scenario 1: Across columns](https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png)
