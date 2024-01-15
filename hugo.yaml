@@ -47,7 +47,7 @@ params:
   showtoc: true # To show/hide Table of Contents
   tocopen: true # To keep open ToC by default on page load
   ShowPostNavLinks: true # Show Previous and Next Posts below a Post
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   
   # ShareButtons: # To customize which share buttons to be enabled on page
   ShowWordCount: false # To word count to metadata
