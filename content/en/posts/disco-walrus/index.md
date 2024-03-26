@@ -16,8 +16,6 @@ ShowToc: true
 TocOpen: true
 ---
 
-Title: "Disco Walrus Dances Under the Sea"
-
 Once upon a time, in the magical depths of the ocean, there lived a walrus named Wally. Wally wasn't your ordinary walrus—he was a disco walrus who loved to dance under the sea. His sparkly tusks shone like disco balls, and his flippers moved to the rhythm of the ocean waves.
 
 One day, Wally decided to throw a grand underwater disco party for all his friends in the sea. He invited the colorful fish, the jiving jellyfish, and even the groovy seahorses. Everyone was excited and couldn't wait for the dance extravaganza.

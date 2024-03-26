@@ -1,13 +1,12 @@
 .header {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: hsla(0, 0%, 0%, 0.037);
-    border-bottom: 1px solid hsla(0, 0%, 0%, 0.071);
+    background-color: var(--header-bg);
+    border-bottom: var(--header-line);
 }
 
 .nav {
     display: table;
-    margin: auto;
     line-height: var(--header-height);
 }
 
@@ -25,7 +24,8 @@
     flex-wrap: inherit;
 }
 
-.logo a img, .logo a svg {
+.logo a img,
+.logo a svg {
     display: inline;
     vertical-align: middle;
     pointer-events: none;
@@ -52,20 +52,24 @@ body:not(.dark) #sun {
     list-style: none;
     word-break: keep-all;
     overflow-x: auto;
+    overflow: hidden;
     white-space: nowrap;
+    justify-content: center;
 }
 
-#menu li + li {
-    margin-inline-start: var(--gap);
+#menu li+li {
+    list-style: square;
+    list-style-position: outside;
+    margin-inline-start: 24px;
 }
 
 #menu a {
-    font-size: 16px;
+    color: var(--selection);
+    font-size: 24px;
 }
 
-#menu .active {
-    font-weight: 500;
-    border-bottom: 2px solid currentColor;
+#menu a:hover {
+    text-decoration: underline;
 }
 
 .lang-switch li,
@@ -80,10 +84,9 @@ body:not(.dark) #sun {
     flex-wrap: inherit;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
     .logo a {
-        font-size: 38px;
-        font-weight: 700;
+        font-size: 36px;
         margin: auto;
     }
 
@@ -92,25 +95,31 @@ body:not(.dark) #sun {
         position: absolute;
         right: 50px;
     }
+
+    .nav {
+        margin: auto;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .logo a {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 600;
         margin: 0;
     }
+
     .logo-switches {
         position: absolute;
         right: 20px;
     }
-}
 
+    .nav {
+        margin: 0;
+    }
+}
 
 .lang-switch a {
     margin: auto 3px;
     font-size: 28px;
     font-weight: 500;
 }
-
-

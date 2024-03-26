@@ -21,6 +21,7 @@ h4,
 h5,
 h6 {
     color: var(--primary);
+    font-weight: var(--weight);
 }
 
 body {
@@ -115,4 +116,9 @@ textarea:-webkit-autofill {
 img {
     display: block;
     max-width: 100%;
+}
+
+small {
+    font-size: 55%;
+    color: var(--secondary)
 }
