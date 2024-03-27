@@ -11,22 +11,32 @@
 </header>
 {{- end }}
 
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
 {{ $var1 := "themes"}}
 {{ range $key, $value := .Site.Taxonomies.categories }}
-{{ if eq $key $var1  }}
+{{ if eq $key $var1 }}
 
 {{ range $value.Pages }}
 <article class="blog-entry">
   <a href="{{ .RelPermalink }}">
-  <h1>{{ .Title }}</h1>
-  <div class="blog-description">
+    <h1>{{ .Title }}</h1>
+    <div class="blog-description">
       {{ with .Description }}
-        {{ $.Scratch.Set "summary" (markdownify .) }}
+      {{ $.Scratch.Set "summary" (markdownify .) }}
       {{ else }}
-        {{ $.Scratch.Set "summary" ((delimit (findRE "(<p.*?>(.|\n)*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 200 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
-      {{ end }}
-      {{ $.Scratch.Get "summary" }}
-  </div>
+      {{ $.Scratch.Set "summary" ((delimit (findRE "(<p.*?>(.|\n)*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify |
+        truncate (default 200 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) |
+        replaceRE "&amp;" "&" | safeHTML) }}
+        {{ end }}
+        {{ $.Scratch.Get "summary" }}
+    </div>
   </a>
 </article>
 {{ end }}

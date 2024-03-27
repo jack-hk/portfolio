@@ -3,6 +3,15 @@
   <h1>
     {{ .Title }}
   </h1>
+  <div class="resume-content">
+    {{- if .Content }}
+    <div class="resume-item">
+      {{- if not (.Param "disableAnchoredHeadings") }}
+      {{- partial "anchored_headings.html" .Content -}}
+      {{- else }}{{ .Content }}{{ end }}
+    </div>
+    {{- end }}
+    {{- partial "timeline.html" . }}
+  </div>
 </header>
-{{- partial "timeline.html" . }}
 {{- end }}{{- /* end main */ -}}

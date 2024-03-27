@@ -7,3 +7,4 @@ summary: "search"
 placeholder: "placeholder text in search input box"
 searchHidden: false
 ---
+hello

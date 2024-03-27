@@ -1,7 +1,7 @@
 ---
 title: "Blog"
 layout: "blog"
-url: "/blog/"
+url: "/es/blog/"
 summary: blog
 type: page
 ---
