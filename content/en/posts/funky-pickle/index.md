@@ -3,17 +3,17 @@ title: "Funky Pickle"
 date: 2022-11-20T09:03:20-08:00
 draft: false
 searchHidden: false
-# description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["markdown", "css", "html", "themes"]
-ategories: ["themes", "syntax"]
+description: "University stuff."
+tags: ["markdown"]
+categories: ["themes", "syntax"]
 series: ["Themes Guide"]
 aliases: ["migrate-from-jekyl"]
 cover:
   image: placeholder.jpg # can also paste direct link from external site
   # caption: "Generated using [OG Image Playground by Vercel](placeholder.jpg)" 
   relative: false # To use relative path for cover image, used in hugo Page-bundles
-ShowToc: true
-TocOpen: true
+ShowToc: false
+TocOpen: false
 ---
 **Title: Comprehensive Analysis of Funky Pickle: A Culinary Delight with a Twist**
 

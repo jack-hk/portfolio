@@ -1,13 +1,7 @@
-/*
-This is just a placeholder blank stylesheet so as to support adding custom styles budled with theme's default styles
-
-Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
-*/
-
 .timeline {
     width: 100%;
     max-width: 800px;
-    padding: 100px 50px;
+    padding: 100px 0px;
     position: relative;
     box-shadow: 0.5rem 0.5rem 2rem 0 rgba(black, 0.2);
 
@@ -37,7 +31,6 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
         margin-bottom: .5em;
         float: left;
         width: 33%;
-        padding-right: 30px;
         text-align: right;
         position: relative;
 
@@ -50,7 +43,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
             background-color: #fff;
             border-radius: 100%;
             top: 15%;
-            right: -4px;
+            right: -21px;
             z-index: 99;
         }
 
@@ -90,5 +83,23 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
                 margin-right: .5em;
             }
         }
+    }
+}
+
+.resume-item {
+    flex: 0 0 50%;
+}
+
+@media screen and (min-width: 650px) {
+    .resume-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .resume-content {
+        display: block;
     }
 }

@@ -1,0 +1,35 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{ $var1 := "themes"}}
+{{ range $key, $value := .Site.Taxonomies.categories }}
+{{ if eq $key $var1  }}
+
+{{ range $value.Pages }}
+<article class="blog-entry">
+  <a href="{{ .RelPermalink }}">
+  <h1>{{ .Title }}</h1>
+  <div class="blog-description">
+      {{ with .Description }}
+        {{ $.Scratch.Set "summary" (markdownify .) }}
+      {{ else }}
+        {{ $.Scratch.Set "summary" ((delimit (findRE "(<p.*?>(.|\n)*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 200 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
+      {{ end }}
+      {{ $.Scratch.Get "summary" }}
+  </div>
+  </a>
+</article>
+{{ end }}
+{{ end }}
+{{ end }}
+{{- end }}{{/* end main */ -}}
