@@ -123,3 +123,21 @@ body:not(.dark) #sun {
     font-size: 28px;
     font-weight: 500;
 }
+
+@media screen and (max-width: 400px) {
+    .logo-switches {
+        position: absolute;
+        left: 35%;
+        top: 110px;
+    }
+
+    .header {
+        padding-bottom: 40px;
+    }
+}
+
+.lang-switch a {
+    margin: auto 3px;
+    font-size: 28px;
+    font-weight: 500;
+}

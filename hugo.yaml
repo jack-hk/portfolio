@@ -139,7 +139,7 @@ menu:
       weight: 10
     - identifier: resume
       name: Resume
-      url: /tags/
+      url: /resume/
       weight: 20
     - identifier: tags
       name: Tags

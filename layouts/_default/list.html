@@ -27,9 +27,9 @@
     {{ .Description | markdownify }}
   </div>
   {{- end }}
+
 </header>
 {{- end }}
-
 {{- if .Content }}
 <div class="post-content">
   {{- if not (.Param "disableAnchoredHeadings") }}
@@ -42,7 +42,7 @@
 
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
 {{- end }}
 
 {{- $paginator := .Paginate $pages }}
@@ -84,6 +84,12 @@
     </h2>
   </header>
   {{- if (ne (.Param "hideSummary") true) }}
+  {{- if .Description }}
+  {{- partial "tags.html" . -}}
+  <div class="entry-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
   <div class="entry-content">
     {{ $summary := index (split .Content "</p>") 0 }}{{ $summary | plainify | htmlUnescape}}
   </div>
