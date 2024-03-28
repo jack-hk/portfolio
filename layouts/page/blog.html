@@ -26,7 +26,9 @@
 {{ range $value.Pages }}
 <article class="blog-entry">
   <a href="{{ .RelPermalink }}">
-    <h1>{{ .Title }}</h1>
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{ .Title }}</h2>
+    </header>
     <div class="blog-description">
       {{ with .Description }}
       {{ $.Scratch.Set "summary" (markdownify .) }}

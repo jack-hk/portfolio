@@ -20,6 +20,7 @@ minify:
   minifyOutput: false
 
 params:
+  TocHome: true
   env: production # To set env to production. To enable google analytics, opengraph, twitter-cards and schema.
   title: Jack Hughes-King # To set title
   description: "Jack Hughes-King" # To set site description
@@ -40,7 +41,7 @@ params:
  
   disableSpecial1stPost: false # To disable no-card special appearance of 1st post
   disableScrollToTop: true # To disable ScrollToTop button
-  # disableAnchoredHeadings: # To disable Anchored Headings
+  disableAnchoredHeadings: false # To disable Anchored Headings
   hidemeta: false # To Hide meta elements : date, read-time, author and available-translations for page
   hideSummary: false # To Hide summary being shown in list pages
   showtoc: true # To show/hide Table of Contents

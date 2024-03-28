@@ -1,6 +1,6 @@
 ---
 title: "Disco Walrus"
-date: 2022-11-20T09:03:20-08:00
+date: 2021
 draft: false
 searchHidden: false
 description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
