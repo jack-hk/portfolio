@@ -142,10 +142,6 @@ menu:
       name: Resume
       url: /resume/
       weight: 20
-    - identifier: blog
-      name: Blog
-      url: /blog/
-      weight: 30
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
