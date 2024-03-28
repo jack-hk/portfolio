@@ -41,7 +41,7 @@ params:
  
   disableSpecial1stPost: false # To disable no-card special appearance of 1st post
   disableScrollToTop: true # To disable ScrollToTop button
-  disableAnchoredHeadings: false # To disable Anchored Headings
+  disableAnchoredHeadings: true # To disable Anchored Headings
   hidemeta: false # To Hide meta elements : date, read-time, author and available-translations for page
   hideSummary: false # To Hide summary being shown in list pages
   showtoc: true # To show/hide Table of Contents

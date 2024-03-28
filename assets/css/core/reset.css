@@ -66,6 +66,10 @@ p {
     margin-bottom: 0;
 }
 
+p {
+    margin-bottom: 10px;
+}
+
 ul {
     padding: 0;
 }
@@ -116,6 +120,7 @@ textarea:-webkit-autofill {
 img {
     display: block;
     max-width: 100%;
+    margin-left: 1px;
 }
 
 small {
