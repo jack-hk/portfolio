@@ -34,10 +34,12 @@
 
 .post-entry {
     position: relative;
-    margin-bottom: var(--gap);
+    padding-bottom: 40px;
+    margin-bottom: 20px;
     background: var(--entry);
-    border-radius: var(--radius);
     transition: transform 0.1s;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    float: left;
 }
 
 .post-entry:active {
@@ -93,18 +95,15 @@
 }
 
 .entry-cover {
+    display: table-cell;
     font-size: 14px;
     margin-bottom: var(--gap);
     text-align: center;
+    overflow: hidden;
 }
 
 .entry-cover img {
-    border-radius: var(--radius);
     pointer-events: none;
-    width: var(--img-size);
-    height: var(--img-size);
-    height: auto;
-    float: right;
 }
 
 .entry-cover a {
@@ -125,4 +124,32 @@
 
 .list-item:hover {
     text-decoration: underline;
+}
+
+@media screen and (min-width: 650px) {
+    .entry-cover img {
+        margin: 10px;
+        max-width: 430px;
+        width: auto;
+    }
+
+    .entry-text {
+        display: table-cell;
+        float: left;
+    }
+
+    .post-entry {
+        display: table;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .entry-cover img {
+        max-width: 100%;
+    }
+
+    .entry-text {
+        float: left;
+    }
+
 }

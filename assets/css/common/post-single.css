@@ -321,7 +321,7 @@
     display: block;
     color: var(--primary);
     line-height: normal;
-    font-size: 75%;
+    font-size: 13px;
     font-weight: 500;
     background: transparent;
     padding: .2em .6em .3em;
