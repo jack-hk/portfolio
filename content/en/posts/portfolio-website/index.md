@@ -3,6 +3,7 @@ title: "Portfolio Website"
 date: 2022-10-28T09:03:20-08:00
 draft: false
 searchHidden: false
+github: "https://github.com/"
 description: "This website and  PaperJack, my custom Hugo theme"
 ShowToc: false
 TocOpen: false

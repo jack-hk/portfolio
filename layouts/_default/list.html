@@ -70,7 +70,9 @@
     {{- end }}
     <header class="entry-header">
       <h2 class="entry-hint-parent">
-        {{- .Title }}
+        <a aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}">
+          {{- .Title }}
+        </a>
         {{- if .Draft }}
         <span class="entry-hint" title="Draft">
           <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
@@ -94,15 +96,29 @@
     {{- end }}
     <div class="entry-content">
       {{ $summary := index (split .Content "</p>") 0 }}{{ $summary | plainify | htmlUnescape}}
+      <a class="underline" style="color:#aaa" aria-label="post link to {{ .Title | plainify }}"
+        href="{{ .Permalink }}">Read more... </a>
     </div>
     {{- if (and .Params.cover.image) }}
   </div>
   {{- end }}
   {{- end }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+
+  {{- if or (.Page.Params.github) (.Page.Params.itch) }}
+  <ul class="entry-externals" id="externals">
+    Links:&nbsp;
+    {{- if .Page.Params.github }}
+    <li><a class="link" href="{{ .Page.Params.github }}">Github</a></li>
+    {{- end }}
+    {{- if .Page.Params.itch }}
+    <li><a class="link" href="{{ .Page.Params.itch }}">Itch.io</a></li>
+    {{- end }}
+  </ul>
+  {{- end }}
 </article>
 </div>
+
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}

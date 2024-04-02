@@ -42,6 +42,18 @@ code {
     direction: ltr;
 }
 
+.link {
+    color: var(--selection);
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
 div.highlight,
 pre {
     position: relative;
