@@ -11,10 +11,6 @@ I love programming and usually work on side projects. This includes creating mod
 
 Beside programming, I enjoy playing games, D&D and my guitar. I travel with my friends when I get the chance.
 
- ⠀
-
-### Primary Skills
-**C++, C#, Unity, Unreal Engine**
 
  ⠀
 

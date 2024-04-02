@@ -5,7 +5,20 @@
   </h1>
   <div class="resume-content">
     {{- if .Content }}
+
     <div class="resume-item">
+      <h3 style="margin-top: 30px;">
+        Primary Skills
+      </h3>
+      <ul class="post-tags" style="margin-top: 5px ;margin-bottom: 30px;">
+        {{range $name, $taxonomy := .Site.Taxonomies.tags}}
+        {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+        <li>
+          <a href={{ .RelPermalink }}>{{$name}}</a>
+        </li>
+        {{end}}
+        {{end}}
+      </ul>
       {{- if not (.Param "disableAnchoredHeadings") }}
       {{- partial "anchored_headings.html" .Content -}}
       {{- else }}{{ .Content }}{{ end }}
@@ -14,4 +27,5 @@
     {{- partial "timeline.html" . }}
   </div>
 </header>
+
 {{- end }}{{- /* end main */ -}}

@@ -4,7 +4,7 @@ date: 2023-05-14T09:03:20-08:00
 draft: false
 searchHidden: false
 description: "A Mega-Man inspired 2D platformer"
-tags: ["c#", "unity", "thunderblossom"]
+tags: ["c#", "unity"]
 cover:
   image: beebo-thumb.png
   relative: false 
