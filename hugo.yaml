@@ -9,6 +9,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 summaryLength: 70
+removePathAccents: false
 
 googleAnalytics: UA-123-45
 
