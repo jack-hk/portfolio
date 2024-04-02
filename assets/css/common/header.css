@@ -132,7 +132,13 @@ body:not(.dark) #sun {
     }
 
     .header {
-        padding-bottom: 40px;
+        padding-bottom: 50px;
+    }
+
+    .nav {
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
