@@ -5,12 +5,21 @@ url: "/resume/"
 summary: resume
 type: page
 ---
+
 <div class="resume-item">
-<p>Hi, I'm Jack. I'm in my final year of university studying <b>BSc (Hons) Computer Technology</b>. My focus is interactive software such as video games.</p>
+<img src="/profile.webp" style="width:200px;height:200px; margin-bottom: 20px;">
+
+{{< skills >}}
+
+<p>Hi, I'm Jack. I'm in my final year of university studying <b>BSc (Hons) Software Development</b>. My focus is interactive software such as video games.</p>
+<ul style="padding-left: 35px; list-style: square;">
+    <li>2 Years of studio experience.</li>
+</ul>
 
 <br>
 <p>
 <h3>Hobbies</h3>
+
 I love programming and usually work on side projects. This includes creating mods for my favourite games, participating in game-jams and fun solo projects.
 
 Beside programming, I enjoy playing games, D&D and my guitar. I travel with my friends when I get the chance.</p>
@@ -40,7 +49,7 @@ Beside programming, I enjoy playing games, D&D and my guitar. I travel with my f
                 <p>Solent University, UK</p>
             </div>
             <div class="body">
-                <p><i class="fa fa-graduation-cap"></i> BSc (Hons) Computer Technology & Foundation
+                <p><i class="fa fa-graduation-cap"></i> BSc (Hons) Software Development & Foundation
                 </p>
                 <ul>
                     <li>Using C++, C#, Unreal Engine</li>

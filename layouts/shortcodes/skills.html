@@ -1,0 +1,13 @@
+
+  <h3>
+    Primary Skills
+  </h3>
+  <ul class="post-tags" style="margin-top: 5px; margin-bottom: 30px;">
+    {{range $name, $taxonomy := .Site.Taxonomies.tags}}
+    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+    <li>
+      <a style="font-size: 15px !important;" href={{ .RelPermalink }}>{{$name}}</a>
+    </li>
+    {{end}}
+    {{end}}
+  </ul>
