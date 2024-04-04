@@ -6,9 +6,7 @@ summary: resume
 type: page
 ---
 <div class="resume-item">
-
-<i class="fa fa-download"></i> [**Download PDF Resume**](/portfolio.pdf)
-
+<a href="/portfolio.pdf" class="underline"><i class="fa fa-download"></i> <b>Download PDF Resume</b></a>
 <img class="resume-img" src="/profile.webp" style="width:200px;height:200px; margin-bottom: 20px;margin-top: 20px;">
 
 {{< primary-skills >}}
