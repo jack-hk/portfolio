@@ -5,9 +5,11 @@ url: "/resume/"
 summary: resume
 type: page
 ---
-
 <div class="resume-item">
-<img src="/profile.webp" style="width:200px;height:200px; margin-bottom: 20px;">
+
+<i class="fa fa-download"></i> [**Download PDF Resume**](/portfolio.pdf)
+
+<img class="resume-img" src="/profile.webp" style="width:200px;height:200px; margin-bottom: 20px;margin-top: 20px;">
 
 {{< primary-skills >}}
 
