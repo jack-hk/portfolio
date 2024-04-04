@@ -1,16 +1,19 @@
 {{- define "main" }}
 <header class="page-header">
   <h1>
-    {{ .Title }}
+    {{ .Title }} <a style="font-size: 26px;" href="/portfolio.pdf" class="resume-button"><i
+        class="fa fa-file-pdf-o"></i>
+    </a>
   </h1>
+
   <div class="resume-content">
     {{- if .Content }}
-      {{- if not (.Param "disableAnchoredHeadings") }}
-      {{- partial "anchored_headings.html" .Content -}}
-      {{- else }}{{ .Content }}{{ end }}
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
     {{- end }}
   </div>
-  
+
 </header>
 
 {{- end }}{{- /* end main */ -}}

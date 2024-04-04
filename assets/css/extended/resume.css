@@ -101,10 +101,18 @@
         flex-wrap: wrap;
         margin-top: 14px;
     }
+
+    .resume-button {
+        float: right;
+    }
 }
 
 @media screen and (max-width: 650px) {
     .resume-content {
         display: block;
+    }
+
+    .resume-button {
+        float: none;
     }
 }
