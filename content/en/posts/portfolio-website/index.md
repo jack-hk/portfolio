@@ -5,6 +5,7 @@ draft: false
 searchHidden: false
 github: "https://github.com/"
 description: "This website and  PaperJack, my custom Hugo theme"
+categories: ["web"]
 ShowToc: false
 TocOpen: false
 ---

@@ -9,7 +9,9 @@ type: page
 <div class="resume-item">
 <img src="/profile.webp" style="width:200px;height:200px; margin-bottom: 20px;">
 
-{{< skills >}}
+{{< primary-skills >}}
+
+{{< secondary-skills >}}
 
 <p>Hi, I'm Jack. I'm in my final year of university studying <b>BSc (Hons) Software Development</b>. My focus is interactive software such as video games.</p>
 <ul style="padding-left: 35px; list-style: square;">
@@ -52,9 +54,11 @@ Beside programming, I enjoy playing games, D&D and my guitar. I travel with my f
                 <p><i class="fa fa-graduation-cap"></i> BSc (Hons) Software Development & Foundation
                 </p>
                 <ul>
-                    <li>Using C++, C#, Unreal Engine</li>
-                    <li>Advanced OOP and UML</li>
-                    <li>Formal education in computer science and software development process (SDLC)</li>
+                    <li>Using C++, C#</li>
+                    <li>OOP fundementals</li>
+                    <li>SDLC, Unit testing</li>
+                    <li>Algorithms</li>
+                    <li>Mathematics (algebra, calculus, discrete, geometry)</li>
                 </ul>
             </div>
             <div class="entry-timeline">
@@ -63,7 +67,7 @@ Beside programming, I enjoy playing games, D&D and my guitar. I travel with my f
                     <p>SAS Graphics, UK</p>
                 </div>
                 <div class="body">
-                    <p>Full-time
+                    <p>Workplace Assistant
                     </p>
                     <ul>
                         <li>Worked in graphics design</li>
