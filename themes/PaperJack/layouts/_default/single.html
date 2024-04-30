@@ -11,6 +11,7 @@
       <div class="post-meta">
         {{- partial "translation_list.html" . -}}
         {{- partial "post_canonical.html" . -}}
+        {{- partial "tags.html" . -}}
       </div>
       {{- end }}
       {{- if .Draft }}
@@ -43,12 +44,6 @@
   {{- end }}
 
   <footer class="post-footer">
-    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
-    <ul class="post-tags">
-      {{- range ($.GetTerms $tags) }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-      {{- end }}
-    </ul>
     {{- if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}

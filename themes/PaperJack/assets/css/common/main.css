@@ -7,7 +7,7 @@
 }
 
 .page-header h1 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .pagination {
@@ -40,6 +40,18 @@
 
 code {
     direction: ltr;
+}
+
+.link {
+    color: var(--selection);
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
 
 div.highlight,
