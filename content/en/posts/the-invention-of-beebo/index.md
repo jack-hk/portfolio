@@ -5,9 +5,6 @@ draft: false
 searchHidden: false
 description: "A Mega-Man inspired 2D platformer"
 tags: ["c#", "unity"]
-cover:
-  image: beebo-thumb.png
-  relative: false 
 ShowToc: false
 TocOpen: false
 ---

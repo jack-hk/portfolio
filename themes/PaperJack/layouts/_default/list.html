@@ -103,8 +103,9 @@
   </div>
   {{- end }}
   {{- end }}
-  {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
-
+  <div class="entry-cover-row">
+    {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+  </div>
   {{- if or (.Page.Params.github) (.Page.Params.itch) }}
   <ul class="entry-externals" id="externals">
     Links:&nbsp;

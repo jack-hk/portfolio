@@ -5,9 +5,6 @@ draft: false
 searchHidden: false
 description: "A series of games I created for global competitions"
 tags: ["c#", "unity"]
-cover:
-  image: gamejams-thumb.png
-  relative: false 
 ShowToc: false
 TocOpen: false
 ---
