@@ -8,7 +8,5 @@ tags: ["c#", "unity"]
 ShowToc: false
 TocOpen: false
 ---
+This is a collection of team-collaborated game jams I’ve worked on. In 2020, my team of three members won runners up in the official UnityJam, with over 2000 submissions.
 
-Game Jams are competitions imposed with a strict theme and time limit. It's about who makes the best game with the provided restrictions.
-
-To be continued...

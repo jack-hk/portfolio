@@ -144,7 +144,6 @@ menu:
       url: /resume/
       weight: 20
 
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
   highlight:
@@ -176,8 +175,8 @@ languages:
     languageDirection: ltr
     languageName: ":gb:"
     params:
-      subtitle: Reference, Tutorials, and Explanations
-    title: Project Documentation
+      subtitle: .NET Software Engineer
+    title: Jack Hughes-King
     weight: 1
   es:
     contentDir: content/es
@@ -186,6 +185,6 @@ languages:
     languageDirection: ltr
     languageName: ":es:"
     params:
-      subtitle: Sitio web de ejemplo
-    title: Documentación del proyecto
+      subtitle: .NET Software Engineer
+    title: Jack Hughes-King
     weight: 2
