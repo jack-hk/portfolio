@@ -5,6 +5,8 @@ draft: false
 searchHidden: false
 itch: "https://thunder-blossom-games.itch.io/courier-clash"
 description: "3D combat-action vehicle game"
+cover:
+    linkFullImages: true
 tags: ["c#", "unity"]
 ShowToc: false
 TocOpen: false

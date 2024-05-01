@@ -176,5 +176,7 @@
         max-width: 100%;
     }
 
-
+    .hideable {
+        display: none;
+    }
 }
