@@ -11,3 +11,4 @@ TocOpen: false
 ---
 This is a collection of team-collaborated game jams I’ve worked on. In 2020, my team of three members won runners up in the official UnityJam, with over 2000 submissions.
 
+</truncate>

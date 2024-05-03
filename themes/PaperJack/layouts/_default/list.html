@@ -82,7 +82,6 @@
         </span>
         {{- end }}
         {{- if not (.Param "hideMeta") }}
-        <break></break>
         {{- partial "post_meta.html" . -}}
         {{- end }}
       </h2>
@@ -95,9 +94,7 @@
     </div>
     {{- end }}
     <div class="entry-content">
-      {{ $summary := index (split .Content "</p>") 0 }}{{ $summary | plainify | htmlUnescape}}
-      <a class="underline" style="color:#aaa" aria-label="post link to {{ .Title | plainify }}"
-        href="{{ .Permalink }}">Read more... </a>
+      {{ $summary := index (split .Content "</truncate>") 0 }}{{ $summary | markdownify}}
     </div>
     {{- if (and .Params.cover.image) }}
   </div>

@@ -6,10 +6,12 @@ searchHidden: false
 itch: "https://thunder-blossom-games.itch.io/courier-clash"
 description: "3D combat-action vehicle game"
 cover:
-    linkFullImages: true
+    linkFullImages: false
 tags: ["c#", "unity"]
 ShowToc: false
 TocOpen: false
 ---
 This was the second project I delivered with Thunderblossom Studios. This time with a larger team of over 25 developers.
 I worked in the gameplay programming department using C# .NET for Unity. 
+
+</truncate>

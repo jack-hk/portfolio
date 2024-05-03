@@ -9,4 +9,6 @@ tags: ["c#", "unity"]
 ShowToc: false
 TocOpen: false
 ---
-The project spanned for 3 months and was released by our start-up studio known now as ThunderBlossom. I worked in the assets programming department using Unity engine with C# .NET. I was responsible for implementing vital features such as...
+The project spanned for 3 months and was released by our start-up studio known now as ThunderBlossom. I worked in the assets programming department using Unity engine with C# .NET. I was responsible for implementing vital features.
+
+</truncate>

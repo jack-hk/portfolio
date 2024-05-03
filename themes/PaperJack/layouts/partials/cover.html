@@ -5,11 +5,13 @@
 {{ $cover := . }}
 {{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
 {{- $loading := cond $.IsSingle "eager" "lazy" }}
-{{- $addLink := true }}
+{{- $addLink := .Params.cover.linkFullImages | default site.Params.cover.linkFullImages | default
+true -}}
 {{ if eq $index 0 }}
 <!-- HTML and CSS for the first index -->
 <figure class="entry-cover">
-    {{- $responsiveImages := (.Params.cover.responsiveImages | default site.Params.cover.responsiveImages) | default
+    {{- $responsiveImages := (.Params.cover.responsiveImages $.IsSingle | default site.Params.cover.responsiveImages) |
+    default
     true }}
     {{- if $cover -}}{{/* i.e it is present in page bundle */}}
     {{- if $addLink }}<a href="{{ ($cover.Permalink) | absURL }}" target="_blank" rel="noopener noreferrer">{{ end
@@ -46,7 +48,6 @@
 <figure class="entry-cover hideable">
     {{- $responsiveImages := (.Params.cover.responsiveImages | default site.Params.cover.responsiveImages) | default
     true }}
-
     {{- if $cover -}}{{/* i.e it is present in page bundle */}}
     {{- if $addLink }}<a href="{{ ($cover.Permalink) | absURL }}" target="_blank" rel="noopener noreferrer">{{ end
         -}}
