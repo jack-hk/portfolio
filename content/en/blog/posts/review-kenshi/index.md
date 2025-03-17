@@ -1,6 +1,5 @@
 ---
 title: "Review: Kenshi"
-date: 2020-08-1T09:03:20-08:00
 draft: false
 searchHidden: true
 hiddenInHomeList: true
