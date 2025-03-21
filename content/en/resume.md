@@ -10,11 +10,13 @@ type: page
 
 {{< primary-skills >}}
 
-{{< secondary-skills >}}
+<!-- {{< secondary-skills >}} -->
 
-<p>Hi, I'm Jack. I'm in my final year of university studying <b>BSc (Hons) Software Development</b>. My focus is interactive software such as video games.</p>
+<p>Hi, I'm Jack. I'm in my final year of university studying <b>BSc (Hons) Software Development</b>.</p>
 <ul style="padding-left: 35px; list-style: square;">
     <li>2 Years of studio experience.</li>
+    <li>Collaborated with various diverse teams.</li>
+    <li>Contributed to the successful launch of 3 products.</li>
 </ul>
 
 <br>
@@ -30,7 +32,7 @@ Beside programming, I enjoy playing games, D&D and my guitar. I travel with my f
     <div class="timeline">
         <div class="entry-timeline">
             <div class="title">
-                <h3>2023 - Present</h3>
+                <h3>2022 - 2023</h3>
                 <p>ThunderBlossom Studios</p>
             </div>
             <div class="body">

@@ -6,3 +6,5 @@ github.com/jack-hk/PaperJack v0.0.0-20250317032431-9ede1708b71a h1:PxbhFfso1FRoP
 github.com/jack-hk/PaperJack v0.0.0-20250317032431-9ede1708b71a/go.mod h1:OhQh7UT5HW8tui/G7wtZX2sWS+yNIogl0y8xxKLmejs=
 github.com/jack-hk/PaperJack v0.0.0-20250317032532-ef5dc055991f h1:DypbU8LY4raldbrw3ay+j3PjBRK8tXGyKEJ0IpTgU4A=
 github.com/jack-hk/PaperJack v0.0.0-20250317032532-ef5dc055991f/go.mod h1:OhQh7UT5HW8tui/G7wtZX2sWS+yNIogl0y8xxKLmejs=
+github.com/jack-hk/PaperJack v0.0.0-20250319191054-8a0d21b4c1bb h1:gcL4uUU7KIm8frF8a6T4JsZ3efhJJoLQpZUN1Eu1bXI=
+github.com/jack-hk/PaperJack v0.0.0-20250319191054-8a0d21b4c1bb/go.mod h1:OhQh7UT5HW8tui/G7wtZX2sWS+yNIogl0y8xxKLmejs=

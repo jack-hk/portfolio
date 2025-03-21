@@ -11,7 +11,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
-summaryLength: 70
+summaryLength: 10
 removePathAccents: false
 
 googleAnalytics: UA-123-45
@@ -35,8 +35,8 @@ params:
   # languageAltTitle: "English" # Alternate title in Multilingual Mode
 
   ShowReadingTime: false # To show read time in post meta
-  ShowShareButtons: true # To show/hide share buttons under post
-  ShowCodeCopyButtons: false # To show/hide Code Copy button
+  ShowShareButtons: false # To show/hide share buttons under post
+  ShowCodeCopyButtons: true # To show/hide Code Copy button
   ShowFullTextinRSS: true # To show Content in RSS feed
   
     # THEME
@@ -50,7 +50,7 @@ params:
   hideSummary: false # To Hide summary being shown in list pages
   showtoc: true # To show/hide Table of Contents
   tocopen: true # To keep open ToC by default on page load
-  ShowPostNavLinks: true # Show Previous and Next Posts below a Post
+  ShowPostNavLinks: false # Show Previous and Next Posts below a Post
   ShowBreadCrumbs: false
   
   # ShareButtons: # To customize which share buttons to be enabled on page
@@ -95,15 +95,13 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Projects"
-    Content: Welcome to my blog
+    Content: 
 
   socialIcons:
     - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+      url: "https://x.com/jackhughesking"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/jack-hk"
 
   analytics:
     google:

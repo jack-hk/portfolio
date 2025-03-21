@@ -1,4 +1,4 @@
 ---
-title: "c#"
+title: "C#"
 url: "/tags/c-sharp/"
 ---

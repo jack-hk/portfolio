@@ -1,0 +1,126 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class GameManager : MonoBehaviourSingletonPersistent<GameManager>
+{
+    public bool gm_isPaused { get; private set; }
+
+    public MenuControls gm_menuControls { get; private set; }
+
+    private FSM _gameStateFSM;
+    private FSM.State
+        _menuState,
+        _lobbyState,
+        _cutsceneState,
+        _adventureState;
+
+    private void Start()
+    {
+        _menuState = MenuState;
+        _lobbyState = LobbyState;
+        _cutsceneState = CutsceneState;
+        _adventureState = AdventureState;
+
+        _gameStateFSM = new FSM();
+        _gameStateFSM.Start(_menuState);
+    }
+
+    public override void Awake()
+    {
+        base.Awake();
+        gm_menuControls = new MenuControls();
+        gm_menuControls.InGame.PauseMenu.performed += ctx => IsPaused(!gm_isPaused);
+    }
+
+    private void Update()
+    {
+        _gameStateFSM.OnUpdate();
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void IsPaused(bool isEnabled)
+    {
+        Time.timeScale = isEnabled ? 0 : 1;
+        gm_isPaused = isEnabled;
+
+        if (Scene.Instance != null)
+        {
+            var gameStage = FindObjectOfType<GameStage>();
+
+            gameStage.TogglePaused(isEnabled);
+            gameStage.EnableCharactersControllers(!isEnabled);
+        }
+    }
+
+    #region GameState FSM
+
+    /// For non-gameplay context. Intended for menu screens.
+    private void MenuState(FSM fsm, FSM.Step step, FSM.State state)
+    {
+        switch (step)
+        {
+            case FSM.Step.Enter:
+                break;
+                
+            case FSM.Step.Update:
+                break;
+
+            case FSM.Step.Exit:
+                break;
+        }
+    }
+
+    /// Player can free-roam the hub world and access levels.
+    private void LobbyState(FSM fsm, FSM.Step step, FSM.State state)
+    {
+        switch (step)
+        {
+            case FSM.Step.Enter:
+                break;
+
+            case FSM.Step.Update:
+                break;
+
+            case FSM.Step.Exit:
+                break;
+        }
+    }
+
+    /// Camera is cinematic and characters are disabled.
+    private void CutsceneState(FSM fsm, FSM.Step step, FSM.State state)
+    {
+        switch (step)
+        {
+            case FSM.Step.Enter:
+                break;
+
+            case FSM.Step.Update:
+                break;
+
+            case FSM.Step.Exit:
+                break;
+        }
+    }
+
+    /// Intended for gameplay levels.
+    private void AdventureState(FSM fsm, FSM.Step step, FSM.State state)
+    {
+        switch (step)
+        {
+            case FSM.Step.Enter:
+                break;
+
+            case FSM.Step.Update:
+                break;
+
+            case FSM.Step.Exit:
+                break;
+        }
+    }
+
+    #endregion
+}

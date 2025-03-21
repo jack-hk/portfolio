@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace RoboStruct
+{
+    /// <summary>
+    /// Extended list that allows for cycling, similar to a queue.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public class ListExtensions<T>
+    {
+        private List<T> items;
+        public int CurrentIndex { get; set; }
+
+        public ListExtensions(List<T> items)
+        {
+            if (items == null || items.Count == 0)
+            {
+                Debug.Log("List of items cannot be null or empty.");
+            }
+
+            this.items = items;
+            CurrentIndex = 0;
+        }
+
+        public T CurrentItem
+        {
+            get { return items[CurrentIndex]; }
+        }
+
+        public T Next()
+        {
+            CurrentIndex = (CurrentIndex + 1) % items.Count;
+            return CurrentItem;
+        }
+
+        public T Previous()
+        {
+            CurrentIndex = (CurrentIndex - 1 + items.Count) % items.Count;
+            return CurrentItem;
+        }
+
+        public T GetNext() 
+        {
+            int nextIndex = (CurrentIndex + 1) % items.Count;
+            return items[nextIndex]; ;
+        }
+
+        public T GetPrevious()
+        {
+            int previousIndex = (CurrentIndex - 1 + items.Count) % items.Count;
+            return items[previousIndex];
+        }
+    }
+}
