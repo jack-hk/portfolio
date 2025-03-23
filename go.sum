@@ -1,12 +1,4 @@
-github.com/jack-hk/PaperJack v0.0.0-20250317031229-1bd304726d45 h1:3QwcY6I9zlqRUrOTmCmfbUXxq15GVKOukLfHzBlrXO8=
-github.com/jack-hk/PaperJack v0.0.0-20250317031229-1bd304726d45/go.mod h1:RNxhU1WD21AjW0WIQqOeNRtY3uu6U90XuwpAciKBkZA=
-github.com/jack-hk/PaperJack v0.0.0-20250317032303-a8059ef3df96 h1:z5sTi2F5Eqw+rBws/qUw/sOAbEC8UX0MO25Q3uHPAXU=
-github.com/jack-hk/PaperJack v0.0.0-20250317032303-a8059ef3df96/go.mod h1:OhQh7UT5HW8tui/G7wtZX2sWS+yNIogl0y8xxKLmejs=
-github.com/jack-hk/PaperJack v0.0.0-20250317032431-9ede1708b71a h1:PxbhFfso1FRoPw2N5CjiBnQene9kse8qmMYIZW6RfK4=
-github.com/jack-hk/PaperJack v0.0.0-20250317032431-9ede1708b71a/go.mod h1:OhQh7UT5HW8tui/G7wtZX2sWS+yNIogl0y8xxKLmejs=
-github.com/jack-hk/PaperJack v0.0.0-20250317032532-ef5dc055991f h1:DypbU8LY4raldbrw3ay+j3PjBRK8tXGyKEJ0IpTgU4A=
-github.com/jack-hk/PaperJack v0.0.0-20250317032532-ef5dc055991f/go.mod h1:OhQh7UT5HW8tui/G7wtZX2sWS+yNIogl0y8xxKLmejs=
-github.com/jack-hk/PaperJack v0.0.0-20250319191054-8a0d21b4c1bb h1:gcL4uUU7KIm8frF8a6T4JsZ3efhJJoLQpZUN1Eu1bXI=
-github.com/jack-hk/PaperJack v0.0.0-20250319191054-8a0d21b4c1bb/go.mod h1:OhQh7UT5HW8tui/G7wtZX2sWS+yNIogl0y8xxKLmejs=
 github.com/jack-hk/PaperJack v0.0.0-20250323011416-bf4635961394 h1:damb6+MPO/nOabMdJYlbUmMoKWAfGqQ0NEwDhUqzgVA=
 github.com/jack-hk/PaperJack v0.0.0-20250323011416-bf4635961394/go.mod h1:OhQh7UT5HW8tui/G7wtZX2sWS+yNIogl0y8xxKLmejs=
+github.com/jack-hk/PaperJack v0.0.0-20250323013725-2ffa92653cc1 h1:wuoDjwnaxGm+d3a9NzLEBc7Rdb8N1expzPtmU9pQVRA=
+github.com/jack-hk/PaperJack v0.0.0-20250323013725-2ffa92653cc1/go.mod h1:OhQh7UT5HW8tui/G7wtZX2sWS+yNIogl0y8xxKLmejs=
