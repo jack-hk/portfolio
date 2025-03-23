@@ -10,8 +10,6 @@ type: page
 
 {{< primary-skills >}}
 
-<!-- {{< secondary-skills >}} -->
-
 <p>Hi, I'm Jack. I'm in my final year of university studying <b>BSc (Hons) Software Development</b>.</p>
 <ul style="padding-left: 35px; list-style: square;">
     <li>2 Years of studio experience.</li>

@@ -10,11 +10,9 @@ type: page
 
 {{< primary-skills >}}
 
-<!-- {{< secondary-skills >}} -->
-
 <p>Hola, soy Jack. Estoy en mi último año de universidad estudiando <b>BSc (Hons) Software Development</b>.</p>
 <ul style="padding-left: 35px; list-style: square;">
-    <li>2 años de experiencia en estudios.</li>
+    <li>2 años de experiencia en trabajo profesional.</li>
     <li>Colaboré con diversos equipos.</li>
     <li>Contribuí al lanzamiento exitoso de 3 productos.</li>
 </ul>
